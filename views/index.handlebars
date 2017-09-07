@@ -1,0 +1,23 @@
+<div class = "container">
+	<div class = "row">
+		<h1> burgerKing </h1>
+	<div class = "row">
+		{{#each burger_data}}
+	<div class = "col-xs-2">
+		<pre> {{this.id}}. {{this.burger_name}} </pre>
+
+	<div class = "col-xs-2"> 
+	<form method = "POST" action = "/burgers/update?_method= PUT" 
+	class = "button-size">
+		<input type = "hidden" name = "burger_id" type = "text"
+		value = {{this.id}}>
+		</form>
+		</div>
+
+		{{/unless}}
+		{{/each}}
+		</div>
+			</div>
+				</div>
+					</div>
+					
